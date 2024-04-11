@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook Store</title>
+</head>
+<body>
+    <h1>NoteBook Store</h1>
+    <div>
+        <label for="filterByName">Filter by Name:</label>
+        <input type="text" id="filterByName" oninput="filterNotebooks()">
+    </div>
+    <div>
+        <label>TotalNotebooks:</label>
+        <span id="totalNotebooks">0</span>
+    </div>
+    <div>
+        <label>TotalShowing </label>
+        <span id="notebooksShowing">0</span>
+    </div>
+    <br>
+    <div>
+        <label for="notebookName">Notebook Name:</label>
+        <input type="text" id="notebookName">
+        <br><br>
+        <label for="notebookDescription">Description:</label>
+        <input type="text" id="notebookDescription">
+        <button onclick="addNotebook()">Add Notebook</button>
+    </div>
+    <div id="notebookList"></div>
+    <div id="notebookDisplay"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+
